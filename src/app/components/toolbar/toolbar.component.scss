@@ -1,0 +1,90 @@
+.outerbox{
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    border: solid lightgray;
+    height: 55px;
+}
+.first{
+    // background-color: lightblue;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined{
+    padding:12px;
+    margin:4px;
+}
+.keep{
+    font-size: 22px;
+    color: #5F6368;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 4px;
+}
+.second{
+    background-color: lightgray;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left :35px;
+    margin-right: 70px;
+    max-width: 500px;
+   margin-bottom: 4px;
+   margin-top:4px;
+    flex:1;
+}
+.search-btn{
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 55px;
+    width: 40px;
+}
+.search-box{
+    
+    border: 0;
+    background-color: transparent;
+   border-radius: 15px;
+    height: 54px;
+    flex: 1;
+    outline: none;
+}
+.close-btn{
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 40px;
+}
+.material-symbols-outlined{
+    height: 14px;
+    width: 14px;
+}
+.third{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+.fourth{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+.material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+}
+button:hover{
+    cursor: pointer;
+}
