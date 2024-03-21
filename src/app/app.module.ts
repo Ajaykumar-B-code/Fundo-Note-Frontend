@@ -21,7 +21,8 @@ import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.c
 import {MatDialogModule} from '@angular/material/dialog';
 import { UpdateNoteComponent } from './components/update-note/update-note.component';
 import { BottomIconsComponent } from './components/bottom-icons/bottom-icons.component';
-import { ArchievenotesComponent } from './components/archievenotes/archievenotes.component'
+import { ArchievenotesComponent } from './components/archievenotes/archievenotes.component';
+import { DeletenoteComponent } from './components/deletenote/deletenote.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ArchievenotesComponent } from './components/archievenotes/archievenotes
     GetAllNotesComponent,
     UpdateNoteComponent,
     BottomIconsComponent,
-    ArchievenotesComponent
+    ArchievenotesComponent,
+    DeletenoteComponent
   ],
   imports: [
     BrowserModule,
