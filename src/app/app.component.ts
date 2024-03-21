@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FundoNotesNew';
+
+  isSideNavCollapsed = false;
+  screenWidth=0;
+
+  onToggleSideNav(data:SideNavToggle):void {
+    this.screenWidth=data.screenwidth;
+    this.isSideNavCollapsed=data.collapsed;
+  }
 }
