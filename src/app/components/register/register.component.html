@@ -1,0 +1,94 @@
+<div class="background">
+    <form [formGroup]="fnamecheck" (ngSubmit)="registerOnSubmit()">
+      <div class="firstbox">
+        <div class="leftide">
+          <div>
+            <img src="assets\gicon.png" alt="logo" width="30px">
+          </div>
+          <div class="sign">
+            <p>Create Account</p>
+          </div>
+          <!-- <div>
+            <p>to continue to Gmail</p>
+          </div> -->
+          <!-- <div class="fname">
+        
+          <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="First Name" formControlName="Fname">
+              <mat-error *ngIf="fnamecheck.hasError('required','Fname')">
+                  First Name is Required!
+                </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input matInput placeholder="Last Name" formControlName="Lname">
+              <mat-error *ngIf="fnamecheck.hasError('required','Lname')">
+                Last Name is Required!
+              </mat-error>
+          </mat-form-field>
+      
+      </div> -->
+        </div>
+        <div class="rightside"> 
+          <div class="fname">
+        
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="First Name" formControlName="Fname">
+                <mat-error *ngIf="fnamecheck.hasError('required','Fname')">
+                    First Name is Required!
+                  </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Last Name" formControlName="Lname">
+                <mat-error *ngIf="fnamecheck.hasError('required','Lname')">
+                  Last Name is Required!
+                </mat-error>
+            </mat-form-field>
+        
+        </div>
+            <div class="Email">
+              <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" formControlName="Email">
+              <mat-error *ngIf="fnamecheck.hasError('required','Email')">
+                Email is Required!
+              </mat-error>
+              <mat-error *ngIf="fnamecheck.hasError('email','Email')">
+                Email is invalid!
+              </mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <!-- [type]="pass?'string':'Password'" -->
+              <input matInput placeholder="Password" formControlName="Password" [type]="hidden?'password':'text'">
+              <mat-error *ngIf="fnamecheck.hasError('required','Password')">
+                Password is Required!
+              </mat-error>
+              <mat-error *ngIf="fnamecheck.hasError('pattern','Password')">
+                Password is Not Strong!
+              </mat-error>
+              </mat-form-field>   
+              <mat-checkbox class="example-margin" (change)="hidden=!hidden">Show Password</mat-checkbox>
+              <!-- (change)="pass=!pass -->
+            </div> 
+          
+          <!-- <div class="Forget-Password">
+            <button mat-button color="primary">Forget Password?</button>
+          </div> -->
+          <!-- <div class="security">
+            <p>Not your computer? Use Guest mode to sign in privately.<span class="inside-security">Learn more about using Guest mode</span></p>
+          </div> -->
+          <div class="create-btn">
+            <div>
+                <!-- <button mat-button color="primary">Create account</button> -->
+                <button class="next-btn" mat-raised-button color="primary">Submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+  
