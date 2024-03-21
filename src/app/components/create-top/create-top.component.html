@@ -1,0 +1,54 @@
+<!-- <div class="window-screen">  -->
+    <div *ngIf="display; then outer else outer2"></div>
+    <ng-template #outer>
+    <div class="outer">
+        <div class="one-one">
+            <input class="search-box" type="text" placeholder="Take a note..." (click)="display=!display">   
+        </div>
+        <div class ="one-two">
+            <button class="one">
+            <span class="material-symbols-outlined">
+                check_box
+            </span> 
+            </button>
+            <button class="two">
+            <img src="assets/paint-brush-Icon.svg">
+            </button>
+            <button class="three">
+                <img src="assets\image-icon.svg" >
+            </button>
+        </div>
+    </div>
+    </ng-template>
+    <ng-template #outer2>
+        <form [formGroup]="Noteform" (ngSubmit)="OnSubmitNote()">
+            <div class="outer2"> 
+                <div class="one-one2">
+                <input class="search-box2" type="text" placeholder="Title" formControlName="Title"> 
+                <img class="iconpin" src="assets\note-pin.svg" alt="">
+                </div>
+            <div class="one-two2"> 
+                <input class="search-box" type="text" placeholder="Take a note" formControlName="Description"> 
+            </div>
+            <div class="one-three2"> 
+                <app-bottom-icons></app-bottom-icons>
+                <div class="last">
+                <div class="one-three-one2">
+                    <span class="material-symbols-outlined">
+                        undo
+                        </span>
+                    <span class="material-symbols-outlined">
+                         redo
+                        </span>
+                    </div>
+                    <div class="three-two-two">
+                        <button class="close-btn ">
+                            close
+                        </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+    </ng-template>
+<!-- </div> -->
