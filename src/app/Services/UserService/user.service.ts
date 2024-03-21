@@ -25,5 +25,15 @@ export class UserService {
     }
     return this.httpService.postService('https://localhost:44318/api/User/reg',reqData,false,header)
   }
+  forgotPassword(regData: any){
+    let header={
+      headers:new HttpHeaders({
+        'Content-type':'application/',
+      })
+    }
+   // console.log("forget ");
+      return this.httpService.postService('https://localhost:44318/api/User/ForgetPassword?Email='+regData.Email,{},false,header)
+   
+  }
 
 }
