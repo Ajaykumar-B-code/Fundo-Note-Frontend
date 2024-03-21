@@ -1,0 +1,24 @@
+.icons{
+    display: flex;
+  //  background-color: transparent;
+    width: 18vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+.material-symbols-outlined:hover{
+background-color: lightgray;
+border-radius: 10px;
+}
+.changecolor{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  width: 10vw;
+  // max-width: 180px;
+  text-decoration:center;
+}

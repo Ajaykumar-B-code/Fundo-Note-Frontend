@@ -19,7 +19,9 @@ import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.c
 // import {MatIconModule} from '@angular/material/icon';
 
 import {MatDialogModule} from '@angular/material/dialog';
-import { UpdateNoteComponent } from './components/update-note/update-note.component'
+import { UpdateNoteComponent } from './components/update-note/update-note.component';
+import { BottomIconsComponent } from './components/bottom-icons/bottom-icons.component';
+import { ArchievenotesComponent } from './components/archievenotes/archievenotes.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { UpdateNoteComponent } from './components/update-note/update-note.compon
     CreateNoteComponent,
     DisplayNoteComponent,
     GetAllNotesComponent,
-    UpdateNoteComponent
+    UpdateNoteComponent,
+    BottomIconsComponent,
+    ArchievenotesComponent
   ],
   imports: [
     BrowserModule,

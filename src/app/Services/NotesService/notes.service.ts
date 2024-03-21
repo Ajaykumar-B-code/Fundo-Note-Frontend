@@ -38,4 +38,33 @@ updatenote(reqData:any,noteid:any){
   }
   return this.httpService.putService('https://localhost:44318/api/Notes/updateNote?notesId='+noteid,reqData,true,header)
 }
+Archievenote(reqData:any){
+  let header={
+    headers:new HttpHeaders({
+      'Content-type': 'application/json',
+      'Authorization':'Bearer '+this.token
+    })
+  }
+  return this.httpService.putService('https://localhost:44318/api/Notes/archieve?notesId='+reqData.notesId,{},true,header)
 }
+DeleteNote(reqData:any){
+  let header={
+    headers:new HttpHeaders({
+      'Content-type': 'application/json',
+      'Authorization':'Bearer '+this.token
+    })
+  }
+  return this.httpService.putService('https://localhost:44318/api/Notes/Trash?notesId='+reqData.notesId,{},true,header)
+}
+AddColor(reqData:any){
+  let header={
+    headers:new HttpHeaders({
+      'Content-type':'application/json',
+      'Authorization':'Bearer '+this.token
+    })
+  }
+  //"https://localhost:44318/api/Notes/addcolor?colour="+this.color+"&notesId="+this.id
+  return this.httpService.putService('https://localhost:44318/api/Notes/addcolor?colour='+reqData.colour+'&notesId='+reqData.notesId,{},true,header)
+}
+}
+
