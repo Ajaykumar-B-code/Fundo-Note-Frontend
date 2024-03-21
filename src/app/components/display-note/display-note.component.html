@@ -1,0 +1,16 @@
+<div *ngFor="let notes of notesList" class="card">
+    <mat-card class="notesContainer" [style.background]="notes.colour">
+      <div class="firstdiv">
+      <mat-card-title role="textbox" class="title" style="display: block; overflow-wrap:  break-word;" (click)="editNoteDialogBox(notes)">{{notes.title}}
+      </mat-card-title>
+      <img class="pinicon" src="assets\note-pin.svg" alt="">
+    </div>
+      <mat-card-content>
+          <div role ="textbox" class="text" style="min-height: 35px;display: block; overflow-wrap:  break-word; " (click)="editNoteDialogBox(notes)">{{notes.description}}</div>
+      </mat-card-content>
+      <div >
+          <app-bottom-icons [notesObject]="notes"></app-bottom-icons>
+      </div>
+    </mat-card>
+  </div>
+  

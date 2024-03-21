@@ -1,0 +1,139 @@
+
+// .outer2{
+//     display: flex;
+//    // border: solid black;
+//    margin-left: 65vh;
+//    margin-top: 5vh;
+//     box-shadow: 1px 1px 2px lightslategray;
+//     border-radius: 5px;
+//     flex-direction: column;
+//     width: 20%;
+//     height: 18%;
+// }
+// .one-one2{
+//     display: flex;
+//   //  border: solid black;
+//     flex:1;
+// }
+// .one-two2{
+//     display: flex;
+//     flex: 1;
+// }
+// .one-three2{
+//     //border: solid black;
+//     display: flex;
+//     flex:1;
+//     align-items: center;
+//    justify-content: space-between;
+// }
+
+// .one-three-one2{
+//     color: lightgray;
+//    // border: solid hsl(0, 0%, 0%);
+//     display: flex;
+//     gap: 2%;
+//     justify-content: space-between;
+// }
+// .last{
+//    // border: solid black;
+//     display: flex;
+//     flex:1;
+//     justify-content: space-between;
+// }
+// .three-two-two{
+//     display: flex;
+//     align-items: center;
+//     padding-right: 2%;
+// }
+// .close-btn{
+//     border: 0;
+//    //background-color: transparent;
+//    font-size: medium;
+//     cursor: pointer;
+// }
+
+.card{
+    // display: flex;
+    // margin-bottom: 8px;
+    // border: solid black;
+    margin-bottom: 8px;
+    display: table-row;
+ }
+ 
+ .notesContainer{
+ 
+ 
+     padding: 10px;
+     border: 1px solid lightgray;
+     margin: 10px;
+     width: 20vw;
+     box-shadow: none;
+     // text-align: right;
+     // padding: 10px;
+     // border: 1px solid lightgray;
+     // justify-content: space-around;
+     // margin:3rem;
+     // min-width: 3rem;
+     // font-size: 20px;
+     // font-weight: 900;
+     // cursor: pointer;
+     // border: none;
+     // height: 5vh;
+     // width: 220px;
+     // box-shadow: none;
+ 
+     // css
+     // text-align: left;
+     // width:auto; 
+     // background-color:rgb(255, 255, 255);
+     //  border-radius: 7px; 
+     //  box-shadow: 1px 3px 3px 3px #aaaaaa;
+     //  padding: 5px 12px 5px 12px;
+      margin: 25px 25px 25px 25px;
+ 
+ }
+ .firstdiv{
+    // border: solid black;
+     display: flex;
+     flex-direction: row;
+      justify-content: space-between;
+     // justify-content: center;
+    // align-items: center;
+ }
+ .pinicon{
+     // height: 20px;
+    //  width: 3rem;
+     padding: 0.313em;
+     font-size: 24px;
+     font-weight: 900;
+     cursor: pointer;
+     border: none;
+     height: 5vh;
+     background-color: transparent;
+     // opacity: 0.5;
+    // border: solid black;
+    // display: flex;
+   
+     // border-radius: 0.313rem;
+     //row-gap: 25px;
+     //lex-direction: column;
+     //justify-self: flex-end;
+     //width: 16px; 
+     //margin-left: 30px;
+ 
+ }
+ .title{
+     // border: solid black;
+     // display: flex;
+     // justify-self: flex-start;
+     // outline: none;
+     // border: none;
+     // font-size: 0.875rem;
+     // font-weight: 500;
+     width: 16vw;
+ }
+ .text{
+     // margin-bottom: 10px; 
+     // padding-bottom: 5px;
+     display: flex;
+ }

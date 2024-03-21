@@ -10,6 +10,15 @@ import { RegisterComponent } from './components/register/register.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { CreateNoteComponent } from './components/create-note/create-note.component';
+import { DisplayNoteComponent } from './components/display-note/display-note.component';
+import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.component';
+// import {MatCardModule} from '@angular/material/card';
+// import {MatDialogModule} from '@angular/material/dialog';
+// import {MatMenuModule} from '@angular/material/menu';
+// import {MatSidenavModule} from '@angular/material/sidenav';
+// import {MatIconModule} from '@angular/material/icon';
+
+import {MatDialogModule} from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -20,11 +29,16 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
     RegisterComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
-    CreateNoteComponent
+    CreateNoteComponent,
+    DisplayNoteComponent,
+    GetAllNotesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
+
+   
   ],
   providers: [
     provideClientHydration()
