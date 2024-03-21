@@ -35,5 +35,14 @@ export class UserService {
       return this.httpService.postService('https://localhost:44318/api/User/ForgetPassword?Email='+regData.Email,{},false,header)
    
   }
+  ResetPassword(regData: any,token:any){
+    let header={
+      headers:new HttpHeaders({
+        'Content-type':'application/json',
+        'Authorization':'Bearer '+token
+      })
+    }
+    return this.httpService.postServiceReset('https://localhost:44318/api/User/ResetPassword',regData,true,header)
+  }
 
 }
