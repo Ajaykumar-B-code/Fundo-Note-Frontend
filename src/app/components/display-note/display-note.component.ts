@@ -10,7 +10,7 @@ import { UpdateNoteComponent } from '../update-note/update-note.component';
 export class DisplayNoteComponent implements OnInit{
  // @Output() refreshUpdate = new EventEmitter<string>();
   constructor(public dialog:MatDialog){}
-  //message:any
+ // message:any
   @Input() notesList:any;
   ngOnInit(): void {
   }
