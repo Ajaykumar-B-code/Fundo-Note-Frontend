@@ -1,0 +1,27 @@
+<div>
+    <div class="text-title">
+        <mat-card-title class="one-one2">
+            <input  matInput [(ngModel)]="title" class="inputtitle">
+            <img class="iconpin" src="assets\note-pin.svg" alt="">
+        </mat-card-title>
+    </div>
+    <div class="text-body">
+        <input matInput [(ngModel)]="description" class="inputdesc">
+    </div>
+    <div class="one-three2">
+        <app-bottom-icons></app-bottom-icons>
+    <div class="last">
+    <div class="one-three-one2">
+    <span class="material-symbols-outlined">
+        undo
+        </span>
+    <span class="material-symbols-outlined">
+         redo
+        </span>
+    </div>
+    <div>
+        <button (click)="closeDialog()" class="close-btn">close</button>
+    </div>
+</div>
+</div>
+</div>

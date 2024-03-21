@@ -18,7 +18,8 @@ import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.c
 // import {MatSidenavModule} from '@angular/material/sidenav';
 // import {MatIconModule} from '@angular/material/icon';
 
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from '@angular/material/dialog';
+import { UpdateNoteComponent } from './components/update-note/update-note.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatDialogModule} from '@angular/material/dialog'
     ResetPasswordComponent,
     CreateNoteComponent,
     DisplayNoteComponent,
-    GetAllNotesComponent
+    GetAllNotesComponent,
+    UpdateNoteComponent
   ],
   imports: [
     BrowserModule,

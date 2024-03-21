@@ -29,4 +29,13 @@ getAllnotes(){
   }
   return this.httpService.getService('https://localhost:44318/api/Notes/allNotes',true,header)
 }
+updatenote(reqData:any,noteid:any){
+  let header={
+    headers:new HttpHeaders({
+      'Content-type': 'application/json',
+      'Authorization' :'Bearer '+this.token
+    })
+  }
+  return this.httpService.putService('https://localhost:44318/api/Notes/updateNote?notesId='+noteid,reqData,true,header)
+}
 }
